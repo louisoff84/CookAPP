@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef IA - Générateur de Recettes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>👨‍🍳 Chef IA</h1>
+        <p>Entrez vos ingrédients et laissez l'IA cuisiner !</p>
+        
+        <div class="input-group">
+            <input type="text" id="ingredients" placeholder="Ex: poulet, crème, champignons...">
+            <button id="generateBtn">Générer une recette</button>
+        </div>
+
+        <div id="loader" class="hidden">L'IA réfléchit... 🍳</div>
+        
+        <div id="recipeResult" class="recipe-card hidden">
+            <h2 id="recipeTitle"></h2>
+            <div id="recipeContent"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
